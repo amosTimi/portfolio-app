@@ -119,25 +119,37 @@ class PortfolioApp extends StatelessWidget {
                     ],
                   ),
                 ),
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Card(
-                      child: Image.asset('calc.jpg',
-                      semanticLabel: 'Simple Calculator',),
-                    ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text('Android Projects',
+                    style: TextStyle(
+                      color: Colors.grey[200],
+                      fontSize: 20.0,
+                    ),),
                   ),
-                  Expanded(
-                    child: Card(
-                      child: Image.asset('ninja_app.jpg',
-                        semanticLabel: 'An app implementing stateful widget',),
-                    ),
-                  ),
-                  Expanded(
-                    child: Card(
-                      child: Image.asset('login_ui.jpg',
-                        semanticLabel: 'A Simple Login User Interface',),
-                    ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Card(
+                          child: Image.asset('calc.jpg',
+                          semanticLabel: 'Simple Calculator',),
+                        ),
+                      ),
+                      Expanded(
+                        child: Card(
+                          child: Image.asset('ninja_app.jpg',
+                            semanticLabel: 'An app implementing stateful widget',),
+                        ),
+                      ),
+                      Expanded(
+                        child: Card(
+                          child: Image.asset('login_ui.jpg',
+                            semanticLabel: 'A Simple Login User Interface',),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
