@@ -12,6 +12,7 @@ class PortfolioApp extends StatelessWidget {
 
     // START OF TABVIEW ELEMENTS
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
@@ -150,8 +151,59 @@ class PortfolioApp extends StatelessWidget {
                   ],
                 ),
               ),
-              child:(
-                
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: Text('Personal Contact Details',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        color: Colors.grey[100],
+                      ),),
+                  ),
+                  Divider(
+                    height: 6.0,
+                    color: Colors.grey[100],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16.0, top: 10.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.phone,
+                              color: Colors.grey[200],
+                            ),
+                            Text('  +2349090222928',
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.grey[200],
+                              letterSpacing: 2.0,
+                            ),),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16.0, top: 10.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.email_sharp,
+                              color: Colors.grey[200],
+                            ),
+                            Text('  timilehinamos@gmail.com',
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                color: Colors.grey[200],
+                                letterSpacing: 2.0,
+                              ),),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ],
